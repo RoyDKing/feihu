@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>飞虎乐购 - 在线销售IT、数码、手机、家电、日用百货,让您找的容易，买的放心，用的安心</title>
+		<link href="css/common.css" type="text/css" rel="stylesheet" />
+		<link href="css/login&register.css" type="text/css" rel="stylesheet" />
+	</head>
+	<body>
+<!------------------------------------header_nav---------------------------------------------->
+		<div class="header_nav">
+			<div class="header_nav_box">
+				<div class="header_nav_left fl">
+					<span class="login">您好,欢迎来到飞虎乐购！<a href="">安全登陆</a></span>
+					<span class="reg">还没加入我们？<a href="register.html" target="_self">免费注册</a></span>
+				</div>
+				<div class="header_nav_right fr">
+					<div class="my_count fl"><a href = "">我的账户<b></b><span></span></a>
+						<ul>
+							<li><a href="">账户首页</a></li>
+							<li><a href="">我的收藏</a></li>
+							<li><a href="">我的订单</a></li>
+						</ul>
+					</div>
+					<div class="help fl"><a href = "">网站导航<b></b><span></span></a>
+						<ul>
+							<li><a href="">帮助中心</a></li>
+							<li><a href="">联系客服</a></li>
+							<li><a href="">常见问题</a></li>
+						</ul>
+					</div>
+					<div class="collection fl"><a href = "">加入收藏<span></span></a></div>
+					<div class="tel fl"><em></em>400&nbsp;883&nbsp;6900</div>
+				</div>
+			</div>
+		</div>
+<!-------------------------------------main_box------------------------------------------------>
+		<div class="main_box">
+			<div id="login" class="main_bg">
+				<a href="index.html"><img src="img/register/login_logo.jpg" /></a>
+				<div class="login_box">
+					<div class="title">用户登录</div>
+					<div class="login_main">
+						<p>欢迎您登录飞虎乐购，享受您的购物之旅</p>
+						<table width="100%" border="0" cellspacing="2" cellpadding="0">
+							<tbody>
+								<tr>
+									<td class="td1">用户名：</td>
+									<td class="td2"><input type="text" name="user" value="" placeholder="请输入用户名" /></td>
+								</tr>
+								<tr>
+									<td class="td1">密&nbsp;&nbsp;&nbsp;码：</td>
+									<td class="td2"><input type="password" name="password" value=""  placeholder="请输入密码"/></td>
+								</tr>
+								<tr>
+									<td class="td1"></td>
+									<td class="td2"><a href="">忘记密码？</a></td>
+								</tr>
+								<tr id="login_code">
+									<td class="td1">验证码：</td>
+									<td class="td2"><input class="fl" type="text" name="id_code" value="" /><span id="id_code" class="fl"></span><a id = "changeCode" class="fr">换图</a></td>
+								</tr>
+								<tr class="code">
+									<td colspan="2">56987</td>
+								</tr>
+								<tr class="line">
+									<td class="td1"></td>
+									<td class="td2"></td>
+								</tr>
+								<tr>
+									<td class="td1">联合登录：</td>
+									<td class="td2">
+										<a id="alipay" href="">支付宝快捷登录</a>
+										<a id="QQ" href="">QQ</a>
+										<a id="sina" href="">新浪</a>
+									</td>
+								</tr>
+								<tr>
+									<td class="td1"></td>
+									<td class="td2">
+										<a id="renren" href="">人人网</a>
+										<a id="kaixin" href="">开心</a>
+										<a id="ntes" href="">网易</a>
+									</td>
+								</tr>
+								<tr>
+									<td class="td1"></td>
+									<td class="td2">
+										<a id="xunlei" href="">迅雷</a>
+										<a id="email139" href="">139邮箱</a>
+									</td>
+								</tr>
+								<tr>
+									<td class="td1"></td>
+									<td class="td2" rowspan="2"><a id="login_btn"></a></td>
+								</tr>
+								<tr>
+									<td class="td1"></td>
+									<td class="td2"></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+
+<!-----------------------------------Copyright------------------------------------------------>
+		<div class= "copy_right">
+			<ul>
+				<li><a href="">常见问题</a><span>|</span></li>
+				<li><a href="">法律说明</a><span>|</span></li>
+				<li><a href="">联系客服</a><span>|</span></li>
+				<li><a href="">新闻中心</a><span>|</span></li>
+				<li><a href="">意见箱</a></li>
+				<div class="clear"></div>
+			</ul>
+			<p>增值电信业务经营许可证：<a class="hover" href="">粤B2-20130551</a> | 网站备案：<a  class="hover" href="">粤ICP备13049812</a> | 食品流通许可证：SP4403112014007826</p>
+			<p>食品流通许可证：SP1103021110002595</p>
+			<p>Copyright © 2009-2016 深圳富金机网络科技有限公司.All Rights Reserved  </p>
+		</div>		
+	</body>
+</html>
+<script src="js/jquery-1.8.2.min.js"></script>
+<script>
+	function randomCode(){
+		return Math.random().toString(36).substr(2,4);
+	}
+	var $user = $("[name='user']"),
+		$password = $("[name='password']"),
+		$id_code = $("[name='id_code']"),
+		$id_code2 = $("#id_code").text(randomCode()).css({"font-size":"20px","color":"gray"}),
+		$changeCode = $("#changeCode").css({"margin-top":"5px","margin-right":"20px"}).css("cursor","pointer"),
+		$login_btn = $("#login_btn").css("cursor","pointer");
+	
+	
+	$changeCode.click(function(){
+		$("#id_code").text(randomCode());
+	});
+	
+	$login_btn.click(function(){
+		if($user.val().length!=0&&$password.val().length!=0){
+			if($id_code.parents("tr").css("display")=="none"){
+				$id_code.parents("tr").toggle();
+			}
+		}
+		if($id_code.val()==$id_code2.text()){
+			location = "index.html";
+		}
+	});
+	
+	
+	
+</script>

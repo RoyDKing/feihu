@@ -1,0 +1,46 @@
+.main_box{width:100%;height: 465px;background: url(../img/register/bg.jpg) repeat-x;margin-bottom: 10px;}
+.main_bg{position:relative;width: 980px;height:465px;margin:0 auto;background: url(../img/register/login_bg.jpg) no-repeat;border-bottom: 1px solid #eee;}
+/*=============================================register=================================================*/
+.register_box{width:546px;height:432px;border: 2px solid #eedfbb;position: absolute;right: 0;bottom: 0;}
+.register_box .title{height: 31px;background: url(../img/register/titleBG.png) repeat-x;line-height: 30px;font-weight: bold;text-indent: 10px;color:#666;}
+.register_main{width: 546px;height: 401px;border: 1px solid #c7012c;background: #fff;overflow: hidden;}
+.register_main p{margin-left: 10px;margin-top: 10px;font-size: 13px;color: #ff0000}
+.register_main span{color:#9999b2;font-weight: bold;}
+.register_main table{font-size:12px;}
+.register_main tr{height: 30px}
+.register_main input{text-indent: 10px;margin:0 5px;height:18px;}
+.register_main em{color:#ff0000}
+.register_main a{color:#0066FF;text-decoration: underline;}
+.register_main a:hover{color: #A52A2A}
+.register_main .td1{text-align: right;width: 17%;margin-top:5px;color:#666}
+.register_main .td2{width:33%}
+.register_main .td3{width:50%;color: #ff4c31;visibility: hidden;}
+#register_btn{width: 140px;height:40px;background: url(../img/register/register.png) no-repeat;border: 0}
+#register_btn:hover{background-position-y: -40px;}
+
+/*=============================================login=================================================*/
+.login_box{width:328px;height:350px;border: 2px solid #eedfbb;position: absolute;top:50px;left:444px;}
+.login_box .title{height: 31px;background: url(../img/register/titleBG.png) repeat-x;line-height: 30px;font-weight: bold;text-indent: 10px;color:#666;}
+.login_main{width: 328px;height:319px;border: 1px solid #c7012c;background: #fff;overflow: hidden;font-size: 12px;}
+.login_main p{width: 304px;height:30px;border: 1px solid #999;margin: 0 auto;margin-top: 10px;margin-bottom:5px;line-height: 30px;background: #fafafa;text-indent: 10px;color: #666}
+.login_main tr{height: 30px}
+.login_main input{text-indent: 10px;margin:0 5px;height:18px;width: 210px;}
+.login_main a{color:#0066FF;text-decoration: underline;margin-left: 5px;}
+.login_main .td1{text-align: right;width: 22%;margin-top:5px;color:#666}
+.login_main .td2{width:78%}
+.login_main .td2 a{padding-left: 17px;padding-right: 10px;}
+.login_main .td2 a:hover{color:#A52A2A}
+.login_main .line{background: url(../img/login/tr_line.gif) repeat-x center;height:5px;width: 90%;margin: 0 auto;}
+#alipay{background: url(../img/login/ico_alipay.gif) no-repeat left center;}
+#QQ{background: url(../img/login/joint.gif) no-repeat left center}
+#sina{background: url(../img/login/ico_sina.gif) no-repeat left center;}
+#renren{background: url(../img/login/ico_renren.gif) no-repeat left center;padding-left: 25px;}
+#kaixin{background: url(../img/login/ico_kaixin.gif) no-repeat left center;}
+#ntes{background: url(../img/login/ico_163.gif) no-repeat left center;}
+#xunlei{background: url(../img/login/ico_xunlei.gif) no-repeat left center;}
+#email139{background: url(../img/login/ico_chinaMobile.jpg) no-repeat left center;padding-left: 25px;}
+#login_btn{width:140px;height: 40px;background: url(../img/login/sitenav.png) 0 -60px no-repeat;display: block;}
+#login_btn:hover{background-position-y: -100px;}
+#login_code input{width: 100px}
+#login_code{display: none;}
+.code{text-align: center;font-size: 15px;display: none;}
