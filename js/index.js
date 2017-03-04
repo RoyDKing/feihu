@@ -130,7 +130,7 @@ $sOls.click(function(){
 	$sOls.eq(index).css("background","#fff");
 });
 
-var day = 5,
+var day = 0,
 	hours = 20,
 	mins = 0,
 	seconds = 20,
